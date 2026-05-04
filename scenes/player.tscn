@@ -254,7 +254,7 @@ script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1539966362]
 sprite_frames = SubResource("SpriteFrames_d2wvv")
-animation = &"walk"
+animation = &"death"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=391953746]
