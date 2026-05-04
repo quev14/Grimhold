@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://6b8spw7eovqh"]
+
+[ext_resource type="Script" uid="uid://0ij6jje3aeag" path="res://scripts/pressure_plate.gd" id="1_ct5vs"]
+[ext_resource type="Texture2D" uid="uid://c24jx1w0r0elt" path="res://assests/pico 8 tiles.png" id="2_xtofl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vubt"]
+size = Vector2(8, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtofl"]
+size = Vector2(8, 9)
+
+[node name="PressurePlate" type="StaticBody2D" unique_id=2025705540]
+script = ExtResource("1_ct5vs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1410746293]
+shape = SubResource("RectangleShape2D_8vubt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2038018555]
+texture = ExtResource("2_xtofl")
+region_enabled = true
+region_rect = Rect2(31.998716, 8.011297, 7.9578953, 7.9255447)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1748017124]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1401991206]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_xtofl")

@@ -1,0 +1,220 @@
+[gd_scene format=3 uid="uid://jeyrrh21yb14"]
+
+[ext_resource type="Script" uid="uid://u04bmelsop57" path="res://scripts/level_2.gd" id="1_eqxsl"]
+[ext_resource type="PackedScene" uid="uid://pbmoqjvodepq" path="res://scenes/player.tscn" id="1_jm1iu"]
+[ext_resource type="Texture2D" uid="uid://c7roijyksbgsv" path="res://assests/Dungeon Tile Set.png" id="2_pbc48"]
+[ext_resource type="AudioStream" uid="uid://cqnypi4p3e1jn" path="res://assests/8-16_Sound_Effects_Pack/07.victory/victory_4.wav" id="3_pbc48"]
+[ext_resource type="PackedScene" uid="uid://6b8spw7eovqh" path="res://scenes/pressure_plate.tscn" id="5_y0kc7"]
+[ext_resource type="PackedScene" uid="uid://cmaej8nqptky7" path="res://scenes/box.tscn" id="6_ne2mo"]
+[ext_resource type="PackedScene" uid="uid://brftceclu20i3" path="res://scenes/bridge.tscn" id="7_6cvei"]
+[ext_resource type="PackedScene" uid="uid://b58n80y7lx0wi" path="res://scenes/spikes.tscn" id="7_ne2mo"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqxsl"]
+texture = ExtResource("2_pbc48")
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8)
+13:1/0 = 0
+13:2/0 = 0
+13:3/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+5:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:9/0 = 0
+11:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:9/0 = 0
+13:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+5:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+10:10/0 = 0
+10:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:11/0 = 0
+2:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+8:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+8:13/0 = 0
+1:14/0 = 0
+1:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+2:14/0 = 0
+2:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+3:14/0 = 0
+3:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+4:14/0 = 0
+4:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+5:14/0 = 0
+5:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+6:14/0 = 0
+6:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.4388695, 8, -1.6187286, 8, 8, -8, 8)
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+8:1/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:4/0 = 0
+8:5/0 = 0
+8:6/0 = 0
+8:7/0 = 0
+9:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+9:5/0 = 0
+9:6/0 = 0
+9:7/0 = 0
+10:1/0 = 0
+10:2/0 = 0
+10:5/0 = 0
+10:6/0 = 0
+10:7/0 = 0
+11:1/0 = 0
+11:2/0 = 0
+11:5/0 = 0
+11:6/0 = 0
+11:7/0 = 0
+12:1/0 = 0
+12:2/0 = 0
+12:3/0 = 0
+12:4/0 = 0
+12:5/0 = 0
+12:6/0 = 0
+12:7/0 = 0
+10:3/size_in_atlas = Vector2i(2, 2)
+10:3/0 = 0
+2:13/0 = 0
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:6/0 = 0
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:3/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+12:10/size_in_atlas = Vector2i(1, 2)
+12:10/0 = 0
+13:10/0 = 0
+13:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:11/0 = 0
+13:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_b4j7a"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_eqxsl")
+
+[node name="level2" type="Node2D" unique_id=426007469]
+script = ExtResource("1_eqxsl")
+
+[node name="player" parent="." unique_id=1922292851 instance=ExtResource("1_jm1iu")]
+position = Vector2(48, -18)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1082785154]
+zoom = Vector2(2.25, 2.25)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=312041375]
+position = Vector2(1, 0)
+tile_set = SubResource("TileSet_b4j7a")
+format = 2
+layer_0/tile_data = PackedInt32Array(196609, 131072, 1, 196610, 131072, 1, 196611, 131072, 1, 196612, 131072, 1, 196613, 131072, 1, 196614, 131072, 1, 196615, 131072, 1)
+
+[node name="VictorySound" type="AudioStreamPlayer2D" parent="." unique_id=948794421]
+stream = ExtResource("3_pbc48")
+volume_db = -15.0
+
+[node name="PressurePlate" parent="." unique_id=1022064883 instance=ExtResource("5_y0kc7")]
+position = Vector2(136.99998, 72)
+scale = Vector2(1.9898845, 1.9882083)
+bridge_path = NodePath("../Bridge")
+bridge_path_2 = NodePath("../Bridge2")
+
+[node name="Bridge" parent="." unique_id=1225356010 instance=ExtResource("7_6cvei")]
+position = Vector2(184.00002, 41)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="Bridge2" parent="." unique_id=527916101 instance=ExtResource("7_6cvei")]
+position = Vector2(200, 41)
+scale = Vector2(1.0000002, 1.0000002)
+
+[node name="box" parent="." unique_id=1903014154 instance=ExtResource("6_ne2mo")]
+position = Vector2(121, 40)
+
+[node name="spikes" parent="." unique_id=383098274 instance=ExtResource("7_ne2mo")]
+position = Vector2(172, 71)
+scale = Vector2(3.394899, 3.0178854)
+
+[node name="spikes2" parent="." unique_id=1778737223 instance=ExtResource("7_ne2mo")]
+position = Vector2(227, 71)
+scale = Vector2(3.394899, 3.0178854)
+
+[node name="spikes3" parent="." unique_id=367621200 instance=ExtResource("7_ne2mo")]
+position = Vector2(282, 71)
+scale = Vector2(3.394899, 3.0178854)

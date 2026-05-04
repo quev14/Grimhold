@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cr5ytufwq1fvo"]
+
+[ext_resource type="Script" uid="uid://bkepys1fy0s0p" path="res://scripts/animatable_body_2d.gd" id="1_c8wj4"]
+[ext_resource type="Texture2D" uid="uid://c24jx1w0r0elt" path="res://assests/pico 8 tiles.png" id="2_2rw3y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_507ja"]
+size = Vector2(8, 8)
+
+[node name="vertical" type="AnimatableBody2D" unique_id=762096180]
+script = ExtResource("1_c8wj4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=811933674]
+texture = ExtResource("2_2rw3y")
+region_enabled = true
+region_rect = Rect2(40.012848, 39.98177, 7.9902496, 7.9902496)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1511415042]
+shape = SubResource("RectangleShape2D_507ja")

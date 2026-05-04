@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b58n80y7lx0wi"]
+
+[ext_resource type="Script" uid="uid://cihvsed6pckrq" path="res://scripts/spikes.gd" id="1_5pg7g"]
+[ext_resource type="Texture2D" uid="uid://c7roijyksbgsv" path="res://assests/Dungeon Tile Set.png" id="2_xbcdo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbcdo"]
+size = Vector2(16, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bflj7"]
+size = Vector2(33.365, 10.290457)
+
+[node name="spikes" type="StaticBody2D" unique_id=383098274]
+script = ExtResource("1_5pg7g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=196475660]
+shape = SubResource("RectangleShape2D_xbcdo")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2049161400]
+scale = Vector2(0.4795444, 0.58306456)
+texture = ExtResource("2_xbcdo")
+region_enabled = true
+region_rect = Rect2(47.970787, 230.92493, 33.054207, 9.036392)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=892222145]
+position = Vector2(-4.61936e-07, 9.998189e-09)
+scale = Vector2(0.4795444, 0.58306456)
+shape = SubResource("RectangleShape2D_bflj7")
+metadata/_edit_group_ = true

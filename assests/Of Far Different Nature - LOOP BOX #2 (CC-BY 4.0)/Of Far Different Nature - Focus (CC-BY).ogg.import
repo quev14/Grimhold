@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://whe8i8xijonf"
+path="res://.godot/imported/Of Far Different Nature - Focus (CC-BY).ogg-852fbb13e32cad4543d6d5e150bdf2bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assests/Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Focus (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Focus (CC-BY).ogg-852fbb13e32cad4543d6d5e150bdf2bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

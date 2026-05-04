@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://chhjxytu7ghq"
+path="res://.godot/imported/Of Far Different Nature - Ai Contact [v2] (CC-BY).ogg-35ee819ce1f6b43424c91505f5d3ea49.oggvorbisstr"
+
+[deps]
+
+source_file="res://assests/Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Ai Contact [v2] (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Ai Contact [v2] (CC-BY).ogg-35ee819ce1f6b43424c91505f5d3ea49.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

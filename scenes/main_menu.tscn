@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bqiiilmbyg6af"]
+
+[ext_resource type="Script" uid="uid://hedbhinkmnnl" path="res://scripts/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="AudioStream" uid="uid://dbrfm7xh2p53n" path="res://assests/8-16_Sound_Effects_Pack/01.ui_button/ui_button_3.wav" id="2_ekxnf"]
+
+[node name="MainMenu" type="Control" unique_id=568352484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ekxnf")
+
+[node name="ButtonSound" type="AudioStreamPlayer2D" parent="." unique_id=1192578269]
+stream = ExtResource("2_ekxnf")

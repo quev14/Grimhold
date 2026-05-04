@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://db1i7fyk118dy"]
+
+[ext_resource type="Script" uid="uid://cvsd5btbpi8ht" path="res://scripts/tutorial.gd" id="1_cfv3y"]
+[ext_resource type="Texture2D" uid="uid://dnqoffa8sirjb" path="res://assests/Buttons - Full Pack.png" id="2_ci5ev"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgr2e"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(64, 1248, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebau5"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(96, 1248, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_288ch"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgr2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebau5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci5ev"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(192, 1056, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_288ch"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(224, 1056, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_twv1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci5ev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_288ch")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twv1b"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(128, 1088, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0w3d"]
+atlas = ExtResource("2_ci5ev")
+region = Rect2(160, 1088, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u5f0c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twv1b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0w3d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Tutorial" type="Node2D" unique_id=1926322790]
+script = ExtResource("1_cfv3y")
+
+[node name="letter_w" type="AnimatedSprite2D" parent="." unique_id=312722793]
+sprite_frames = SubResource("SpriteFrames_288ch")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.84860384
+
+[node name="letter_a" type="AnimatedSprite2D" parent="." unique_id=1962659980]
+sprite_frames = SubResource("SpriteFrames_twv1b")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="letter_d" type="AnimatedSprite2D" parent="." unique_id=1997928178]
+sprite_frames = SubResource("SpriteFrames_u5f0c")
+animation = &"idle"
+autoplay = "idle"

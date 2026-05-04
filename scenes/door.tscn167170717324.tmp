@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bh1qx8w10g61q"]
+
+[ext_resource type="Script" uid="uid://c55v2ug2mj20g" path="res://scripts/door.gd" id="1_uvdjg"]
+[ext_resource type="Texture2D" uid="uid://c7roijyksbgsv" path="res://assests/Dungeon Tile Set.png" id="2_uvdjg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83dcw"]
+size = Vector2(16, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
+size = Vector2(20, 30)
+
+[node name="door" type="Node2D" unique_id=1309091754]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1296399856]
+script = ExtResource("1_uvdjg")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1827463358]
+texture = ExtResource("2_uvdjg")
+region_enabled = true
+region_rect = Rect2(208.11288, 160.91753, 15.906082, 30.850113)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2050046406]
+shape = SubResource("RectangleShape2D_83dcw")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D" unique_id=2091361496]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D" unique_id=1358252137]
+shape = SubResource("RectangleShape2D_uvdjg")

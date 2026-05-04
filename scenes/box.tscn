@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cmaej8nqptky7"]
+
+[ext_resource type="Texture2D" uid="uid://c7roijyksbgsv" path="res://assests/Dungeon Tile Set.png" id="1_3inec"]
+[ext_resource type="Script" uid="uid://brsslw8n258kt" path="res://scripts/rigid_body_2d.gd" id="1_ks2v0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ks2v0"]
+size = Vector2(16, 16)
+
+[node name="box" type="Node2D" unique_id=1903014154]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1006806600]
+script = ExtResource("1_ks2v0")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2007234115]
+texture = ExtResource("1_3inec")
+region_enabled = true
+region_rect = Rect2(159.98625, 159.7803, 16.09459, 16.170868)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=694990862]
+shape = SubResource("RectangleShape2D_ks2v0")
+metadata/_edit_group_ = true

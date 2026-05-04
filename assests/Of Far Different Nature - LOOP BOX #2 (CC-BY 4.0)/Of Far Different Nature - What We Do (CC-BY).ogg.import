@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dkgbpk348kdto"
+path="res://.godot/imported/Of Far Different Nature - What We Do (CC-BY).ogg-1ad0d9dcc3dde7fd88b7c12d72f448c7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assests/Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - What We Do (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - What We Do (CC-BY).ogg-1ad0d9dcc3dde7fd88b7c12d72f448c7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

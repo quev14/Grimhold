@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ic3xdkmgwv58"
+path="res://.godot/imported/Of Far Different Nature - Gentle One (CC-BY).ogg-c4b6f2870d4cac12493f3a5a5f22783d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assests/Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Gentle One (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Gentle One (CC-BY).ogg-c4b6f2870d4cac12493f3a5a5f22783d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

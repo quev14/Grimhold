@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjrtjctqecbeh"
+path="res://.godot/imported/Of Far Different Nature - Le Flamand [v2] (CC-BY).ogg-124f14e87450d65f098f03078f72a2e2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assests/Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Le Flamand [v2] (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Le Flamand [v2] (CC-BY).ogg-124f14e87450d65f098f03078f72a2e2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
