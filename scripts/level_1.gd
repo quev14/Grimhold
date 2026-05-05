@@ -1,15 +1,6 @@
 extends Node2D
 
-static var victory_played = false
-
 func _ready():
-	if not victory_played:
-		victory_played = true
-		$VictorySound.play()
 	var music_manager = get_tree().get_first_node_in_group("music_manager")
 	if music_manager:
 		music_manager.change_music("res://assests/Space Horror InGame Music (Exploration) _Clement Panchout.wav")
-	
-	var player = get_tree().get_first_node_in_group("player")
-	if player:
-		player.has_key = false

@@ -146,8 +146,12 @@ func _ready():
 func _on_play_pressed():
 	button_sound.play()
 	get_tree().paused = false
-	music_manager.change_music("res://assests/Space Horror InGame Music (Exploration) _Clement Panchout.wav")
-	music_manager.start_timer()
+	
+	var music_manager = get_tree().get_first_node_in_group("music_manager")
+	if music_manager:
+		music_manager.reset_timer()
+		music_manager.start_timer()
+	
 	await get_tree().create_timer(0.1).timeout
 	get_tree().change_scene_to_file(first_level)
 	

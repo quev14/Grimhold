@@ -10,19 +10,24 @@ func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	key_icon.hide()
 	
-	# Timer — top-left corner
+	print("Key icon type: ", key_icon.get_class())
+	print("Key icon before scale: ", key_icon.scale)
+	key_icon.scale = Vector2(6.0, 6.0)
+	print("Key icon after scale: ", key_icon.scale)
+	
+	# Timer — top-left corner, larger font
 	timer_label.set_anchor(SIDE_LEFT, 0.0)
 	timer_label.set_anchor(SIDE_RIGHT, 0.0)
 	timer_label.set_anchor(SIDE_TOP, 0.0)
 	timer_label.set_anchor(SIDE_BOTTOM, 0.0)
-	timer_label.set_offset(SIDE_LEFT, 10)
-	timer_label.set_offset(SIDE_RIGHT, 130)
+	timer_label.set_offset(SIDE_LEFT, 15)
+	timer_label.set_offset(SIDE_RIGHT, 250)
 	timer_label.set_offset(SIDE_TOP, 10)
-	timer_label.set_offset(SIDE_BOTTOM, 40)
+	timer_label.set_offset(SIDE_BOTTOM, 70)
+	timer_label.add_theme_font_size_override("font_size", 36)
 	
-	# Key icon — directly below the timer
-	key_icon.position = Vector2(40, 70)
-
+	# Position key icon below timer
+	key_icon.position = Vector2(58, 100)
 func _process(_delta):
 	var music_manager = get_tree().get_first_node_in_group("music_manager")
 	if music_manager:

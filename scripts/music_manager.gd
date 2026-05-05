@@ -2,7 +2,7 @@ extends Node
 
 var music
 var elapsed_time = 0.0
-var is_timing = true
+var is_timing = false
 var current_track_path = ""
 
 func _ready():

@@ -8,7 +8,7 @@ layer = 10
 script = ExtResource("1_ahhtf")
 
 [node name="KeyIcon" type="Sprite2D" parent="." unique_id=1289459513]
-position = Vector2(101, 55)
+position = Vector2(120, 55)
 scale = Vector2(4.2767115, 4.632544)
 texture = ExtResource("2_oo0fn")
 region_enabled = true
