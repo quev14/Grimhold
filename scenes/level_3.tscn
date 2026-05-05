@@ -16,15 +16,10 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqxsl"]
 texture = ExtResource("2_q2dsb")
-5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, -8, 8)
-6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8)
 13:1/0 = 0
 13:2/0 = 0
 13:3/0 = 0
 5:5/0 = 0
-6:5/0 = 0
 6:6/0 = 0
 7:6/0 = 0
 6:7/0 = 0
@@ -173,6 +168,9 @@ texture = ExtResource("2_q2dsb")
 11:3/0 = 0
 11:4/0 = 0
 10:4/0 = 0
+6:5/0 = 0
+6:1/0 = 0
+5:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_b4j7a"]
 physics_layer_0/collision_layer = 1
@@ -285,3 +283,9 @@ scale = Vector2(3.9548962, 3.2478237)
 [node name="AnimatableBody2D" parent="." unique_id=762096180 instance=ExtResource("12_w5nkq")]
 position = Vector2(234, 88.00001)
 scale = Vector2(2.1439123, 1.9595964)
+
+[node name="StairRamp" type="StaticBody2D" parent="." unique_id=1483562018]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StairRamp" unique_id=1769511168]
+position = Vector2(97, 0)
+polygon = PackedVector2Array(0, 0, 80, 80, -2, 80)

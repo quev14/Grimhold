@@ -1,14 +1,19 @@
 extends Control
 
 func _ready():
-	var button_sound = $ButtonSound
+	# Switch to end menu music
+	var music_manager = get_tree().get_first_node_in_group("music_manager")
+	if music_manager:
+		music_manager.change_music("res://assests/1- Midnight Dreams.ogg")  # ← change to your end music file
+	
+	var screen_size = get_viewport().get_visible_rect().size
 
 	var bg_texture = TextureRect.new()
 	bg_texture.texture = load("res://assests/slika12.png")
 	bg_texture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	bg_texture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-	bg_texture.custom_minimum_size = Vector2(1152, 648)
-	bg_texture.size = Vector2(1152, 648)
+	bg_texture.custom_minimum_size = screen_size
+	bg_texture.size = screen_size
 	bg_texture.position = Vector2(0, 0)
 	add_child(bg_texture)
 
@@ -23,8 +28,7 @@ func _ready():
 
 	var vbox = VBoxContainer.new()
 	vbox.add_theme_constant_override("separation", 20)
-	# Moved down 50px by adding 50 to Y position
-	vbox.position = Vector2(576 - 200, 324 - 250 + 50)
+	vbox.position = Vector2(screen_size.x / 2 - 200, screen_size.y / 2 - 200)
 	vbox.size = Vector2(400, 500)
 	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	main_panel.add_child(vbox)
@@ -61,7 +65,7 @@ func _ready():
 	play_again.add_theme_font_size_override("font_size", 24)
 	play_again.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	play_again.pressed.connect(func():
-		button_sound.play()
+		$ButtonSound.play()
 		await get_tree().create_timer(0.1).timeout
 		_on_play_again_pressed())
 	vbox.add_child(play_again)
@@ -72,12 +76,11 @@ func _ready():
 	menu_btn.add_theme_font_size_override("font_size", 24)
 	menu_btn.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	menu_btn.pressed.connect(func():
-		button_sound.play()
+		$ButtonSound.play()
 		await get_tree().create_timer(0.1).timeout
 		_on_menu_pressed())
 	vbox.add_child(menu_btn)
 
-	var music_manager = get_tree().get_first_node_in_group("music_manager")
 	if music_manager:
 		music_manager.stop_timer()
 		var time = music_manager.get_time()
@@ -107,9 +110,6 @@ func _on_play_again_pressed():
 	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
 
 func _on_menu_pressed():
-	var music_manager = get_tree().get_first_node_in_group("music_manager")
-	if music_manager:
-		music_manager.reset_timer()
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func _input(event):

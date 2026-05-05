@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dqfcs20sbxduq"]
+
+[ext_resource type="Script" uid="uid://on3lla4tgvvo" path="res://scripts/pause_menu.gd" id="1_n87rw"]
+[ext_resource type="AudioStream" uid="uid://dbrfm7xh2p53n" path="res://assests/8-16_Sound_Effects_Pack/01.ui_button/ui_button_3.wav" id="2_myx47"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=175385507]
+process_mode = 3
+script = ExtResource("1_n87rw")
+
+[node name="ButtonSound" type="AudioStreamPlayer2D" parent="." unique_id=2103891727]
+stream = ExtResource("2_myx47")

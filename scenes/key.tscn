@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://oexp5kgaya7m"]
 
-[ext_resource type="Script" uid="uid://8wuqe4gx0w0w" path="res://key.gd" id="1_fttkb"]
+[ext_resource type="Script" uid="uid://bvfuabsu7hwcl" path="res://key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://b3w5aewuj3wft" path="res://assests/key_32x32_24f.png" id="1_svk5y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yk2u2"]

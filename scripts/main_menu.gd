@@ -8,10 +8,18 @@ var volume_slider
 var fullscreen_checkbox
 var button_sound
 
+
+	
 func _ready():
 	button_sound = $ButtonSound
 
-	# Background image
+	var music_manager = get_tree().get_first_node_in_group("music_manager")
+	if music_manager:
+		music_manager.change_music("res://assests/1- Midnight Dreams.ogg")
+	
+	get_tree().paused = false
+	
+	# ... rest of your existing _ready() code below
 	var bg_texture = TextureRect.new()
 	bg_texture.texture = load("res://assests/slika12.png")  # change this to your image path
 	bg_texture.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -137,9 +145,12 @@ func _ready():
 
 func _on_play_pressed():
 	button_sound.play()
+	get_tree().paused = false
+	music_manager.change_music("res://assests/Space Horror InGame Music (Exploration) _Clement Panchout.wav")
+	music_manager.start_timer()
 	await get_tree().create_timer(0.1).timeout
 	get_tree().change_scene_to_file(first_level)
-
+	
 func _on_settings_pressed():
 	button_sound.play()
 	main_panel.hide()
