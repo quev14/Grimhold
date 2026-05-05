@@ -213,8 +213,8 @@ next_level = "res://scenes/end.tscn"
 [node name="HUD" parent="." unique_id=1438881527 instance=ExtResource("8_q2dsb")]
 
 [node name="PressurePlate2" parent="." unique_id=2025705540 instance=ExtResource("7_8uepa")]
-position = Vector2(426, -56.999992)
-scale = Vector2(1.9898845, 1.9882083)
+position = Vector2(426, -42)
+scale = Vector2(1.99, 1.829)
 bridge_path = NodePath("../Bridge3")
 bridge_path_2 = NodePath("../Bridge4")
 bridge_path_3 = NodePath("../Bridge5")

@@ -215,23 +215,23 @@ position = Vector2(552, 32)
 position = Vector2(201, 88)
 
 [node name="spikes" parent="." unique_id=1645948305 instance=ExtResource("8_6dial")]
-position = Vector2(224, 120)
+position = Vector2(224, 121)
 scale = Vector2(1.9416505, 3.0969741)
 
 [node name="spikes2" parent="." unique_id=1254934740 instance=ExtResource("8_6dial")]
-position = Vector2(256, 120.00001)
+position = Vector2(256, 121.00001)
 scale = Vector2(1.9416505, 3.0969741)
 
 [node name="spikes3" parent="." unique_id=748992110 instance=ExtResource("8_6dial")]
-position = Vector2(288, 120.00001)
+position = Vector2(288, 121.00001)
 scale = Vector2(1.9416505, 3.0969741)
 
 [node name="spikes4" parent="." unique_id=132276858 instance=ExtResource("8_6dial")]
-position = Vector2(320, 120)
+position = Vector2(320, 121)
 scale = Vector2(1.9416505, 3.0969741)
 
 [node name="spikes5" parent="." unique_id=1044747324 instance=ExtResource("8_6dial")]
-position = Vector2(352, 120.00001)
+position = Vector2(352, 121.00001)
 scale = Vector2(1.9416505, 3.0969741)
 
 [node name="Tutorial" parent="." unique_id=932515487 instance=ExtResource("9_e3sih")]

@@ -96,7 +96,9 @@ func format_time(seconds):
 	return "%02d:%02d" % [minutes, secs]
 
 func get_message(seconds):
-	if seconds < 120:
+	if seconds < 60:
+		return "Woah that's a record!"
+	elif seconds < 69: 
 		return "Amazing! You're a true dungeon master!"
 	elif seconds < 300:
 		return "Great job! The dungeon couldn't stop you!"
@@ -107,6 +109,7 @@ func _on_play_again_pressed():
 	var music_manager = get_tree().get_first_node_in_group("music_manager")
 	if music_manager:
 		music_manager.reset_timer()
+		music_manager.start_timer()
 	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
 
 func _on_menu_pressed():
